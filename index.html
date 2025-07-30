@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Your Name</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Background Animation Container -->
+    <div class="background-animation">
+      <div class="glass-ring"></div>
+      <div class="color-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">My Portfolio</div>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="gradient-text">Hello, I'm</span>
+          <br />
+          <span class="hero-name">Aditya Singh</span>
+        </h1>
+        <p class="hero-subtitle">
+          Backend-Focused Product Developer & AI Engineer
+        </p>
+        <div class="hero-cta">
+          <a href="https://github.com/Adi-contributes" class="btn-primary"
+            >View My Work</a
+          >
+          <a href="mailto:adi.singh.2205@gmail.com" class="btn-secondary"
+            >Get In Touch</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a backend-focused product developer currently pursuing my
+              B.Tech in Mechanical Engineering at IIT Delhi, where I represent
+              the Mechanical Department. As a U.S. citizen with expertise in
+              Java, Spring Boot, REST APIs, and Generative AI, I build modular
+              backend architectures that seamlessly integrate with LLMs and
+              modern AI pipelines.
+            </p>
+
+            <p>
+              Currently working at Naviga Global as a Generative AI intern, I'm
+              implementing microservices in Java 21, building REST endpoints,
+              and integrating local LLMs using Ollama for scalable content
+              processing. My main project involves implementing the MCP protocol
+              to convert SharePoint-hosted PDFs, Word Docs, and PPTs into
+              vector-ready chunks for LLM-powered conversational agents,
+              optimized for corpora exceeding 1000 pages with response latencies
+              under 300ms.
+            </p>
+
+            <p>
+              My other projects showcase real-world AI applications, including a
+              News Article Bias Detector that uses LLMs to analyze raw HTML
+              content and flag biased media, reducing review time from 10
+              minutes to under a second, and a Summarizer that creates concise,
+              context-aware summaries of web articles with sub-200ms API
+              response times.
+            </p>
+          </div>
+          <div class="skills">
+            <div class="skill-item">
+              <span class="skill-name">Backend Development</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">AI/ML Engineering</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">System Architecture</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Java & Spring Boot</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 92%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Generative AI</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+      <div class="container">
+        <h2 class="section-title">Featured Work</h2>
+        <div class="work-grid">
+          <a
+            href="https://github.com/Adi-contributes/SEO-extraction-ollama"
+            class="work-item"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="work-image">
+              <div class="placeholder-image">MCP Protocol</div>
+            </div>
+            <div class="work-info">
+              <h3>MCP Protocol Implementation</h3>
+              <p style="color: #ffa500; font-size: 0.9em; margin-bottom: 8px">
+                (In Progress)
+              </p>
+              <p>
+                Converting SharePoint documents into vector-ready chunks for
+                LLM-powered conversational agents with sub-300ms latency
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/Adi-contributes/SEO-extraction-ollama"
+            class="work-item"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="work-image">
+              <div class="placeholder-image">Bias Detector</div>
+            </div>
+            <div class="work-info">
+              <h3>News Article Bias Detector</h3>
+              <p>
+                LLM-powered system that analyzes HTML content and flags biased
+                media, reducing review time from 10 minutes to under 1 second
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/Adi-contributes/News-Summariser"
+            class="work-item"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="work-image">
+              <div class="placeholder-image">AI Summarizer</div>
+            </div>
+            <div class="work-info">
+              <h3>Context-Aware Summarizer</h3>
+              <p>
+                Web article summarization with sub-200ms API response times and
+                context-aware abstractions
+              </p>
+            </div>
+          </a>
+          <div class="work-item">
+            <div class="work-image">
+              <div class="placeholder-image">AI Journaling</div>
+            </div>
+            <div class="work-info">
+              <h3>AI-Powered Journaling Backend</h3>
+              <p>
+                Spring AI and Ollama integration providing automated daily
+                summaries with 70% effort reduction
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Ready to collaborate on AI & Backend projects?</h3>
+            <p>
+              I'm always open to discussing new opportunities in backend
+              development, AI engineering, and innovative product solutions.
+            </p>
+            <div class="contact-links">
+              <!-- Removed email and LinkedIn links -->
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Adi-contributes" class="social-link"
+              >GitHub</a
+            >
+            <a
+              href="https://linkedin.com/in/aditya-singh-a6405328b"
+              class="social-link"
+              >LinkedIn</a
+            >
+            <a href="mailto:adi.singh.2205@gmail.com" class="social-link"
+              >Email</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
