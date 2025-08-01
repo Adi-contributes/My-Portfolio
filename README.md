@@ -41,31 +41,6 @@ A modern portfolio website.
 - **JavaScript (ES6+)** - Interactive features and animations
 - **Google Fonts** - Inter font family for premium typography
 
-## 🚀 Getting Started
-
-1. **Clone or download** the project files
-2. **Open `index.html`** in your web browser
-3. **Customize the content** to match your personal information
-
-
-## 📱 Responsive Design
-
-The website is fully responsive and includes:
-
-- **Mobile-first approach** with breakpoints
-- **Flexible grid layouts** that adapt to screen size
-- **Touch-friendly interactions** for mobile devices
-- **Optimized typography** that scales appropriately
-
-## 🎨 Animation Features
-
-### Scroll-Based Animations
-
-- **Parallax effects** on background elements
-- **Section reveal animations** using Intersection Observer
-- **Skill bar fill animations** triggered by scroll
-- **Work item stagger animations**
-
 ### Interactive Animations
 
 - **Button hover effects** with transform and shadow
