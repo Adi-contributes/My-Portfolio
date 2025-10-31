@@ -44,81 +44,18 @@
           Backend-Focused Product Developer & AI Engineer
         </p>
         <div class="hero-cta">
-          <a href="https://github.com/Adi-contributes" class="btn-primary"
+          <a
+            href="https://github.com/Adi-contributes"
+            class="btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
             >View My Work</a
           >
           <a href="mailto:adi.singh.2205@gmail.com" class="btn-secondary"
-            >Get In Touch</a
+            >Get In Touch<span class="email-tooltip"
+              >adi.singh.2205@gmail.com</span
+            ></a
           >
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-          <div class="about-text">
-            <p>
-              I'm a backend-focused product developer currently pursuing my
-              B.Tech in Mechanical Engineering at IIT Delhi, where I represent
-              the Mechanical Department. I build modular backend architectures 
-              that seamlessly integrate with LLMs and modern AI pipelines.
-            </p>
-
-            <p>
-              Previously worked at Naviga Global as a Generative AI intern, I
-              implemented microservices in Java 21, building REST endpoints,
-              and integrating local LLMs using Ollama for scalable content
-              processing. My main project involves implementing the MCP protocol
-              to convert SharePoint-hosted PDFs, Word Docs, and PPTs into
-              vector-ready chunks for LLM-powered conversational agents,
-              optimized for corpora exceeding 1000 pages with response latencies
-              under 300ms.
-            </p>
-
-            <p>
-              My other projects showcase real-world AI applications, including a
-              News Article Bias Detector that uses LLMs to analyze raw HTML
-              content and flag biased media, reducing review time from 10
-              minutes to under a second, and a Summarizer that creates concise,
-              context-aware summaries of web articles with sub-200ms API
-              response times.
-            </p>
-          </div>
-          <div class="skills">
-            <div class="skill-item">
-              <span class="skill-name">Backend Development</span>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 95%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">AI/ML Engineering</span>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 90%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">System Architecture</span>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 85%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">Java & Spring Boot</span>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 92%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">Generative AI</span>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 88%"></div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -128,26 +65,40 @@
       <div class="container">
         <h2 class="section-title">Featured Work</h2>
         <div class="work-grid">
+          <!-- Featured Main Project -->
           <a
-            href=""
-            class="work-item"
+            href="https://www.churo.in"
+            class="work-item featured-project"
             target="_blank"
             rel="noopener"
           >
-            <div class="work-image">
-              <div class="placeholder-image">MCP Protocol</div>
+            <div class="work-image featured-image">
+              <div class="placeholder-image featured-placeholder">Churo</div>
             </div>
-            <div class="work-info">
-              <h3>MCP Protocol Implementation</h3>
-              <p style="color: #ffa500; font-size: 0.9em; margin-bottom: 8px">
-                (In Progress)
+            <div class="work-info featured-info">
+              <h3 class="featured-title">
+                Churo - AI-Powered Video Knowledge Base
+              </h3>
+              <p class="featured-description">
+                Churo converts video libraries into searchable, queryable
+                knowledge bases with AI-powered summaries, visualizations, and
+                semantic search. Built with Next.js 14, Express, and TypeScript,
+                it processes videos from YouTube and Instagram through an AI
+                pipeline that extracts transcripts, generates summaries and
+                flashcards, and creates Mermaid diagrams, mind maps, and
+                timelines.
               </p>
-              <p>
-                Converting SharePoint documents into vector-ready chunks for
-                LLM-powered conversational agents with sub-300ms latency
+              <p class="featured-description">
+                The platform uses OpenAI embeddings with pgvector for semantic
+                search, enabling meaning-based queries. A RAG-powered chat
+                answers questions with source citations, and a shared knowledge
+                base prevents redundant processing. Additional features include
+                a Chrome extension, payment integration, credit-based
+                processing, and dark/light themes.
               </p>
             </div>
           </a>
+
           <a
             href="https://github.com/Adi-contributes/SEO-extraction-ollama"
             class="work-item"
@@ -192,6 +143,83 @@
                 Spring AI and Ollama integration providing automated daily
                 summaries with 70% effort reduction
               </p>
+            </div>
+          </div>
+          <div class="work-item scrapped-project">
+            <div class="work-image">
+              <div class="placeholder-image scrapped-image">MCP Protocol</div>
+            </div>
+            <div class="work-info">
+              <h3>MCP Protocol Implementation</h3>
+              <p class="scrapped-badge">Scrapped</p>
+              <p class="scrapped-description">
+                Converting SharePoint documents into vector-ready chunks for
+                LLM-powered conversational agents with sub-300ms latency
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a backend-focused product developer currently pursuing my
+              B.Tech at IIT Delhi. I build modular backend architectures that
+              seamlessly integrate with LLMs and modern AI pipelines.
+            </p>
+
+            <p>
+              Previously worked at Naviga Global as a Generative AI intern, I
+              implemented microservices in Java 21, building REST endpoints, and
+              integrating local LLMs using Ollama for scalable content
+              processing.
+            </p>
+
+            <p>
+              My other projects showcase real-world AI applications, including a
+              News Article Bias Detector that uses LLMs to analyze raw HTML
+              content and flag biased media, reducing review time from 10
+              minutes to under a second, and a Summarizer that creates concise,
+              context-aware summaries of web articles with sub-200ms API
+              response times.
+            </p>
+          </div>
+          <div class="skills">
+            <div class="skill-item">
+              <span class="skill-name">Next.js & React</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 92%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">TypeScript & Node.js</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">AI/LLM Integration</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 88%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">PostgreSQL & pgvector</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Full-Stack Architecture</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
             </div>
           </div>
         </div>

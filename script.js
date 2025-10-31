@@ -98,6 +98,9 @@ const style = document.createElement("style");
 style.textContent = `
     .btn-primary, .btn-secondary {
         position: relative;
+    }
+    
+    .btn-primary {
         overflow: hidden;
     }
     
