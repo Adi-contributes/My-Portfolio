@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aditya Singh</title>
+    <meta
+      name="description"
+      content="Aditya Singh builds applied ML systems: causal digital twins, graph fraud scoring and LLM tools. Final year at IIT Delhi."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg fill='none' stroke='%232A44D4' stroke-width='1.6'%3E%3Cpath d='M16 2v28M2 16h28M6 6l20 20M26 6 6 26'/%3E%3Ccircle cx='16' cy='16' r='5'/%3E%3Ccircle cx='16' cy='16' r='10.5'/%3E%3C/g%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#work">Skip to work</a>
+
+    <header class="site-header">
+      <a class="site-name" href="#top">Aditya Singh</a>
+      <nav class="site-nav" aria-label="Sections">
+        <span class="nav-indicator" aria-hidden="true"></span>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- hero -->
+      <section class="hero">
+        <div class="hero-text">
+          <h1 class="hero-name" aria-label="Aditya Singh">
+            <span class="hero-name-line">Aditya</span>
+            <span class="hero-name-line">Singh</span>
+          </h1>
+          <p class="hero-intro">
+            I build ML systems that try to explain why something went wrong,
+            not just that it did. Causal graphs for failing servers, graph
+            features for fraud, and lately a planner for how spiders build
+            their webs. Final year at IIT Delhi, graduating June 2027.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-solid" href="#work">See my work</a>
+            <a class="button button-quiet" href="mailto:adi.singh.2205@gmail.com">Email me</a>
+          </div>
+        </div>
+
+        <figure class="hero-web">
+          <canvas
+            id="orb-web-canvas"
+            role="img"
+            aria-label="An orb web drawing itself: bridge lines, frame, radii, hub, then the sticky spiral"
+          ></canvas>
+          <figcaption class="hero-web-caption">
+            Built in roughly the order a garden spider works: bridge lines,
+            frame, radii, hub, then the sticky spiral. Drag your cursor through
+            it.
+            <button class="text-button" id="rebuild-web-button" type="button">Build it again</button>
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- work -->
+      <section class="section" id="work">
+        <div class="section-head">
+          <h2 class="section-title">Work</h2>
+          <p class="section-note">Tap any card to open it.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-card--large" data-project="lighthouse">
+            <div class="project-card-art">
+              <svg class="illustration" data-illustration="causal-layers" viewBox="0 0 320 180" aria-hidden="true"></svg>
+            </div>
+            <div class="project-card-text">
+              <p class="project-context">Incedo, 2026</p>
+              <h3 class="project-title">
+                <button class="project-open" type="button" aria-haspopup="dialog">Lighthouse EWS</button>
+              </h3>
+              <p class="project-summary">
+                A digital twin of a client's servers that learns how they fail
+                and warns about 23 minutes before a crash.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card project-card--medium" data-project="fraud">
+            <div class="project-card-art">
+              <svg class="illustration" data-illustration="ego-network" viewBox="0 0 320 180" aria-hidden="true"></svg>
+            </div>
+            <div class="project-card-text">
+              <p class="project-context">Incedo, US internship, summer 2026</p>
+              <h3 class="project-title">
+                <button class="project-open" type="button" aria-haspopup="dialog">Graph fraud scorer</button>
+              </h3>
+              <p class="project-summary">
+                Telco fraud scoring for a bank client. Adding network features
+                took PR-AUC from 0.269 to 0.543.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card project-card--medium" data-project="spider">
+            <div class="project-card-art">
+              <svg class="illustration" data-illustration="orb-web" viewBox="0 0 320 180" aria-hidden="true"></svg>
+            </div>
+            <div class="project-card-text">
+              <p class="project-context">B.Tech project, IIT Delhi, 2026 <span class="status-tag">In progress</span></p>
+              <h3 class="project-title">
+                <button class="project-open" type="button" aria-haspopup="dialog">How a spider plans its web</button>
+              </h3>
+              <p class="project-summary">
+                Orb-web construction modelled as a hierarchical task network,
+                tested on a second species to see if it generalises.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card project-card--large" data-project="churo">
+            <div class="project-card-art">
+              <svg class="illustration" data-illustration="video-to-notes" viewBox="0 0 320 180" aria-hidden="true"></svg>
+            </div>
+            <div class="project-card-text">
+              <p class="project-context">Solo project, 2025</p>
+              <h3 class="project-title">
+                <button class="project-open" type="button" aria-haspopup="dialog">Churo</button>
+              </h3>
+              <p class="project-summary">
+                Save a YouTube video or Instagram reel and get notes, flashcards
+                and a chat you can search later. Live at churo.in.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card project-card--small" data-project="knee">
+            <div class="project-card-art">
+              <svg class="illustration" data-illustration="mri-slices" viewBox="0 0 320 180" aria-hidden="true"></svg>
+            </div>
+            <div class="project-card-text">
+              <p class="project-context">Kaggle, 2026 <span class="status-tag">In progress</span></p>
+              <h3 class="project-title">
+                <button class="project-open" type="button" aria-haspopup="dialog">Knee MRI findings</button>
+              </h3>
+              <p class="project-summary">
+                Twelve kinds of knee abnormality from MRI series and their
+                reports.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card project-card--small" data-project="billing">
+            <div class="project-card-art">
+              <svg class="illustration" data-illustration="form-fill" viewBox="0 0 320 180" aria-hidden="true"></svg>
+            </div>
+            <div class="project-card-text">
+              <p class="project-context">With a friend, 2026 <span class="status-tag">In progress</span></p>
+              <h3 class="project-title">
+                <button class="project-open" type="button" aria-haspopup="dialog">Billing entry agent</button>
+              </h3>
+              <p class="project-summary">
+                Reads Excel sheets and photos of bills, fills a freight ERP's
+                billing form, then waits for a person to check it.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card project-card--small" data-project="earlier">
+            <div class="project-card-art">
+              <svg class="illustration" data-illustration="documents" viewBox="0 0 320 180" aria-hidden="true"></svg>
+            </div>
+            <div class="project-card-text">
+              <p class="project-context">Earlier work</p>
+              <h3 class="project-title">
+                <button class="project-open" type="button" aria-haspopup="dialog">Small LLM tools</button>
+              </h3>
+              <p class="project-summary">
+                A news bias detector and a context aware article summariser.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- experience -->
+      <section class="section" id="experience">
+        <div class="section-head">
+          <h2 class="section-title">Where I've been</h2>
+        </div>
+
+        <div class="timeline-wrap">
+          <span class="timeline-track" aria-hidden="true"><span class="timeline-progress"></span></span>
+          <ol class="timeline">
+            <li class="timeline-entry">
+              <p class="timeline-when">2026 to now</p>
+              <div class="timeline-body">
+                <h3>Incedo</h3>
+                <p class="timeline-role">AI/ML trainee</p>
+                <p>
+                  Built the causal digital twin behind Lighthouse, Incedo's
+                  server early warning product, after pitching the idea in
+                  standups. Spent ten weeks in the US on a graph fraud scorer
+                  for a bank client and demoed the prototype end to end to them.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-entry">
+              <p class="timeline-when">June to July 2025</p>
+              <div class="timeline-body">
+                <h3>Naviga Global</h3>
+                <p class="timeline-role">Software engineering intern, Delhi</p>
+                <p>
+                  Java 21 microservices and REST endpoints, with local LLMs
+                  running through Ollama to summarise content.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-entry">
+              <p class="timeline-when">2023 to 2027</p>
+              <div class="timeline-body">
+                <h3>IIT Delhi</h3>
+                <p class="timeline-role">B.Tech, Mechanical Engineering</p>
+                <p>
+                  An ML project predicting material properties in MLL100 got me
+                  a letter of recommendation. My B.Tech project is on how
+                  spiders plan their webs.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section class="section about" id="about">
+        <div class="section-head">
+          <h2 class="section-title">About</h2>
+        </div>
+
+        <div class="about-layout">
+          <figure class="about-photo">
+            <img src="assets/aditya.jpg" alt="Aditya Singh" width="480" height="600" loading="lazy" />
+          </figure>
+
+          <div class="about-text">
+            <p>
+              I'm a mechanical engineering student who ended up doing ML,
+              mostly the kind that tries to explain why something happened. A
+              lot of my work ends up as a graph: how a server fails, how
+              fraudsters share devices, how a spider decides what to spin next.
+            </p>
+            <p>
+              I like taking an idea from a pitch to a working demo. Lighthouse
+              began as something I kept raising in standups, and the fraud
+              prototype ended with an end to end demo in front of the client.
+            </p>
+            <p>
+              Tools I reach for most: Python, PyTorch, LightGBM, scikit-learn,
+              LangGraph, FastAPI, and TypeScript with Next.js and Express on
+              the product side. Postgres with pgvector when something needs
+              search.
+            </p>
+            <p>Outside work I'm into cars and gadgets.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="section contact" id="contact">
+        <div class="section-head">
+          <h2 class="section-title">Get in touch</h2>
+        </div>
+        <p class="contact-note">
+          I'm looking for full time ML roles in the US starting mid 2027. I'm
+          a US citizen, so there's no sponsorship to sort out.
+        </p>
+        <div class="contact-email-row">
+          <a class="contact-email" href="mailto:adi.singh.2205@gmail.com">adi.singh.2205@gmail.com</a>
+          <button class="text-button" id="copy-email-button" type="button" data-email="adi.singh.2205@gmail.com">Copy</button>
+        </div>
+        <ul class="contact-links">
+          <li><a href="https://linkedin.com/in/aditya-singh-a6405328b" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/Adi-contributes" target="_blank" rel="noopener">GitHub</a></li>
+          <li class="resume-link-item"><a href="assets/Aditya_Singh_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Aditya Singh</p>
+      <p>The web at the top rebuilds itself if you click it.</p>
+    </footer>
+
+    <!-- project sheet, filled in by script.js -->
+    <div class="project-backdrop" aria-hidden="true"></div>
+    <div class="project-sheet" role="dialog" aria-modal="true" aria-labelledby="project-sheet-title">
+      <div class="project-sheet-scroll">
+        <button class="project-sheet-close" type="button" aria-label="Close project">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>
+        </button>
+        <div class="project-sheet-content">
+          <div class="project-sheet-art"></div>
+          <p class="project-sheet-context"></p>
+          <h2 class="project-sheet-title" id="project-sheet-title"></h2>
+          <div class="project-sheet-body"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- project details. one template per card, matched by data-project -->
+
+    <template id="project-detail-lighthouse">
+      <p class="detail-lede">
+        Lighthouse is Incedo's early warning system for server failures. My
+        part is the digital twin underneath it: a causal graph of how a server
+        breaks, run as a simulation that tunes itself to each client's
+        machines.
+      </p>
+      <div class="detail-numbers">
+        <div class="detail-number">
+          <span class="detail-number-value" data-count-to="64.7" data-decimals="1" data-suffix="%">64.7%</span>
+          <span class="detail-number-label">of failure minutes caught</span>
+        </div>
+        <div class="detail-number">
+          <span class="detail-number-value" data-count-to="8" data-suffix=" of 12">8 of 12</span>
+          <span class="detail-number-label">failures warned about before they started</span>
+        </div>
+        <div class="detail-number">
+          <span class="detail-number-value" data-count-to="23" data-suffix=" min">23 min</span>
+          <span class="detail-number-label">average warning ahead of failure</span>
+        </div>
+        <div class="detail-number">
+          <span class="detail-number-value" data-count-to="35" data-suffix="%">35%</span>
+          <span class="detail-number-label">fewer false alarms than the old baseline at the same recall</span>
+        </div>
+      </div>
+      <h3>How it started</h3>
+      <p>
+        I kept bringing the idea up in daily standups. The question was
+        simple: could a simulation label failure data better than an
+        autoencoder? It could, and in week 8 I was moved onto the Lighthouse
+        product team to build it properly.
+      </p>
+      <h3>What I built</h3>
+      <ul class="detail-list">
+        <li>
+          A causal graph grown from 21 nodes and 50 edges to 117 nodes and 188
+          edges, including 9 feedback loops. It runs in six layers, from
+          outside triggers through the OS, runtime and hardware down to log
+          signals and the crash itself.
+        </li>
+        <li>
+          The simulation engine, written as a structural causal model in
+          PyTorch. Feedback loops get unrolled through time so gradients can
+          flow through them.
+        </li>
+        <li>
+          Shadow Replay, the self calibration step. It fits 50 edge weights
+          with Adam so the twin behaves like the client's real servers.
+        </li>
+        <li>
+          The detector: two isolation forests and an autoencoder that all have
+          to agree, with a 98th percentile ceiling and a 3 of 3 persistence
+          filter to cut the noise.
+        </li>
+        <li>A 12 page write up in Word and LaTeX with results and figures.</li>
+      </ul>
+      <h3>Stack</h3>
+      <ul class="tag-list">
+        <li>Python</li><li>PyTorch</li><li>Structural causal models</li><li>Isolation forest</li><li>Autoencoders</li><li>LaTeX</li>
+      </ul>
+    </template>
+
+    <template id="project-detail-fraud">
+      <p class="detail-lede">
+        A Canadian bank wanted to join its transaction fraud signals with
+        telecom fraud tied to those transactions. My team owned the telco side,
+        and I built the scorer and most of the prototype around it.
+      </p>
+      <div class="detail-numbers">
+        <div class="detail-number">
+          <span class="detail-number-value" data-count-to="0.543" data-decimals="3">0.543</span>
+          <span class="detail-number-label">PR-AUC with graph features, up from 0.269 on base features alone</span>
+        </div>
+        <div class="detail-number">
+          <span class="detail-number-value" data-count-to="0.918" data-decimals="3">0.918</span>
+          <span class="detail-number-label">ROC-AUC, up from 0.772</span>
+        </div>
+        <div class="detail-number">
+          <span class="detail-number-value" data-count-to="1.37" data-decimals="2">1.37</span>
+          <span class="detail-number-label">retrains per 18 months with the RL policy, versus 9.34</span>
+        </div>
+        <div class="detail-number">
+          <span class="detail-number-value" data-count-to="0.014" data-decimals="3">0.014</span>
+          <span class="detail-number-label">calibration error after isotonic calibration, from 0.045</span>
+        </div>
+      </div>
+      <h3>What I built</h3>
+      <ul class="detail-list">
+        <li>
+          A LightGBM scorer on 46 features across base, network and graph
+          motif blocks. The network block ended up carrying about 70% of split
+          importance.
+        </li>
+        <li>
+          A full RGCN embedding pipeline was too heavy for the infra we had, so
+          I ran it offline instead. It surfaced a 3 hop chain (shared device,
+          shared location, carrier cohort, back to shared device) which
+          production now recomputes cheaply with typed path matrix
+          multiplication.
+        </li>
+        <li>
+          A retraining policy trained with tabular Q-learning over 15,000
+          simulated 18 month runs. It chooses between holding, recalibrating
+          and retraining, and caught 96.6% of fraud value against 97.0% for
+          retraining all the time.
+        </li>
+        <li>
+          Two LangGraph workflows: one that builds recalibration datasets, and
+          a SAR pipeline that turns the top six feature contributions into four
+          plain English reasons, with a deterministic fallback.
+        </li>
+        <li>
+          One FastAPI service with a React front end for scoring, an ego
+          network view, streamed explanations, a SAR queue, drift monitoring
+          and the RL policy. We demoed it end to end in a client meeting.
+        </li>
+      </ul>
+      <h3>Stack</h3>
+      <ul class="tag-list">
+        <li>Python</li><li>LightGBM</li><li>RGCN</li><li>Q-learning</li><li>LangGraph</li><li>FastAPI</li><li>React</li>
+      </ul>
+    </template>
+
+    <template id="project-detail-spider">
+      <div class="detail-links">
+        <a href="https://github.com/Abhi-Manyu12/htn-biology" target="_blank" rel="noopener">Code on GitHub</a>
+      </div>
+      <p class="detail-lede">
+        Orb-weaving spiders build their webs in a fairly fixed order, and each
+        stage breaks down into smaller jobs. That maps neatly onto a
+        hierarchical task network, the same kind of planner used in robotics.
+      </p>
+      <h3>What we built</h3>
+      <ul class="detail-list">
+        <li>
+          A GTPyhop style forward decomposition planner in Python that plans a
+          full orb web for the garden spider, Araneus diadematus, plus an
+          interactive visualiser to step through the plan.
+        </li>
+        <li>A second model that treats the later building stages as fixed action patterns.</li>
+        <li>
+          My part: the cross species analysis on Darwin's bark spider,
+          Caerostris darwini, to check the model isn't tied to one species.
+        </li>
+      </ul>
+      <p>
+        Team project with Abhimanyu Goyal and Arnav V Raju, supervised by Prof.
+        Shaurya Shriyam. The mid-term report is in and we're working toward a
+        paper.
+      </p>
+      <h3>Stack</h3>
+      <ul class="tag-list">
+        <li>Python</li><li>HTN planning</li><li>GTPyhop</li>
+      </ul>
+    </template>
+
+    <template id="project-detail-churo">
+      <div class="detail-links">
+        <a href="https://www.churo.in" target="_blank" rel="noopener">Open churo.in</a>
+      </div>
+      <p class="detail-lede">
+        Churo turns the videos you watch into a library you can actually
+        search. A Chrome extension grabs the YouTube video or Instagram reel
+        you're on, and the backend does the rest.
+      </p>
+      <div class="detail-numbers">
+        <div class="detail-number">
+          <span class="detail-number-value" data-count-to="3" data-prefix="~" data-suffix=" s">~3 s</span>
+          <span class="detail-number-label">median search over about 995 saved documents, down from about 4 minutes</span>
+        </div>
+        <div class="detail-number">
+          <span class="detail-number-value" data-count-to="30" data-suffix="k">30k</span>
+          <span class="detail-number-label">lines of TypeScript, written solo in three months</span>
+        </div>
+      </div>
+      <h3>What it does</h3>
+      <ul class="detail-list">
+        <li>Pulls the transcript and generates summaries, notes, chapters, flashcards and diagrams.</li>
+        <li>
+          Embeds everything with OpenAI text-embedding-3-small into Postgres
+          with pgvector, so search works on meaning, not keywords.
+        </li>
+        <li>A chat over any saved video, running on Gemini 2.5 Flash.</li>
+        <li>Accounts, payments and credits, with real paying users.</li>
+      </ul>
+      <p>
+        All of it is TypeScript: roughly 13.8k lines of Express on the backend
+        and 16.4k lines of Next.js on the front.
+      </p>
+      <h3>Stack</h3>
+      <ul class="tag-list">
+        <li>TypeScript</li><li>Next.js</li><li>Express</li><li>Prisma</li><li>PostgreSQL</li><li>pgvector</li><li>OpenAI</li><li>Gemini</li>
+      </ul>
+    </template>
+
+    <template id="project-detail-knee">
+      <p class="detail-lede">
+        The RSNA knee competition on Kaggle asks you to detect twelve kinds of
+        abnormality from knee MRI series, with the radiology reports as extra
+        signal. It runs through October 2026 and I'm working on it until then.
+      </p>
+      <p>
+        Most of my time goes into how to pool information across MRI slices,
+        and into pulling cleaner labels out of the reports.
+      </p>
+      <h3>Stack</h3>
+      <ul class="tag-list">
+        <li>PyTorch</li><li>Vision transformers</li><li>Multiple instance learning</li>
+      </ul>
+    </template>
+
+    <template id="project-detail-billing">
+      <p class="detail-lede">
+        A friend runs a freight forwarding business and pays someone full time
+        to type bill details from Excel sheets and paper bills into their ERP.
+        We're building an agent to do that entry instead.
+      </p>
+      <p>
+        The plan is browser automation rather than writing straight to the
+        database. An LLM reads the sheets and bill photos, the agent fills the
+        real billing form, and it stops before submit so a person can check
+        every entry on the screen they already know.
+      </p>
+      <h3>Stack</h3>
+      <ul class="tag-list">
+        <li>LLM extraction</li><li>Browser automation</li><li>Human review step</li>
+      </ul>
+    </template>
+
+    <template id="project-detail-earlier">
+      <p class="detail-lede">Two smaller LLM projects from before the bigger ones above.</p>
+      <h3>News bias detector</h3>
+      <p>
+        Reads the raw HTML of a news article and flags biased framing. Cut
+        review time from about 10 minutes to under a second.
+        <a href="https://github.com/Adi-contributes/SEO-extraction-ollama" target="_blank" rel="noopener">Code</a>
+      </p>
+      <h3>Context aware summariser</h3>
+      <p>
+        Summarises web articles while keeping the surrounding context, with
+        API responses under 200 ms.
+        <a href="https://github.com/Adi-contributes/News-Summariser" target="_blank" rel="noopener">Code</a>
+      </p>
+      <h3>Stack</h3>
+      <ul class="tag-list">
+        <li>Python</li><li>Ollama</li><li>Local LLMs</li>
+      </ul>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
